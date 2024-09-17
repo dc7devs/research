@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
-import { ChartTikTokAccountSVG, DoubleCheckSVG, LibraryPageSVG } from "../ui/svgs";
+import { ChartTikTokAccountSVG } from "../ui/svgs";
 import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +21,13 @@ export function SectionSeven() {
 
           <Card className="sm:w-[300px] lg:w-1/3 xl:w-[384px] bg-white shadow-[#535353]/7 shadow-xl lg:shadow-2xl border-none rounded-[16px]">
             <CardHeader className="pb-0 mb-8">
-              <DoubleCheckSVG className="w-full" />
+              <Image
+                className="mx-auto"
+                src={"/images/double-check.png"}
+                width={259}
+                height={259}
+                alt="Double Check"
+              />
             </CardHeader>
             <CardContent>
               <p className="text-lg leading-[36px] font-plus-jakarta-sans text-neutral-700"><strong>Manually double-check</strong> everything to ensure the content is unique, <strong>with no duplicates</strong>, and offers fresh viral video concepts.</p>
@@ -29,7 +36,13 @@ export function SectionSeven() {
 
           <Card className="sm:w-[300px] lg:w-1/3 xl:w-[384px] bg-white shadow-[#535353]/7 shadow-xl lg:shadow-2xl border-none rounded-[16px]">
             <CardHeader className="pb-0 mb-8">
-              <LibraryPageSVG className="w-full" />
+              <Image
+                className="mx-auto"
+                src={"/images/library-page.png"}
+                width={292}
+                height={259}
+                alt="Library Page"
+              />
             </CardHeader>
             <CardContent>
               <p className="text-lg leading-[36px] font-plus-jakarta-sans text-neutral-700"><strong>Deliver it all in a library</strong> you can access instantly. And you can recreate viral ideas or turning them into high-performing ads.</p>

@@ -1,4 +1,4 @@
-import { HighPerformingCertifiedSVG } from "../ui/svgs";
+import Image from "next/image";
 
 export function SectionEight() {
     return (
@@ -9,7 +9,13 @@ export function SectionEight() {
         <p className="pb-3 font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800 font-bold">It is now the most critical element of success and the best ROI that you can control!</p>
         <p className="font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800">Other strategies are taking the backseat.</p>
 
-        <HighPerformingCertifiedSVG className="mt-10 max-[768px]:size-full z-20" />
+        <Image
+          className="mt-10 max-[768px]:size-full z-20"
+          src="/images/high-performing-certified.png"
+          width={442.21}
+          height={513.12}
+          alt="High Performing Certified"
+        />
       </section>
     )
 }

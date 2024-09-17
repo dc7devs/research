@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { TickCircle } from "../ui/icons";
-import { FastGrowingChart, MetaAdLibrary, QualityOverQuantity } from "../ui/svgs";
 
 export function SectionNine() {
     return (
@@ -10,7 +10,13 @@ export function SectionNine() {
         <div className="flex flex-wrap items-stretch justify-center gap-6 mb-14 lg:flex-nowrap">
           <Card className="sm:w-[300px] lg:w-1/3 xl:w-[384px] bg-white shadow-[#535353]/7 shadow-xl lg:shadow-2xl border-none rounded-[16px]">
             <CardHeader className="pb-0 mb-8">
-              <FastGrowingChart className="w-full" />
+              <Image
+                className="mx-auto h-[259px] object-contain"
+                src="/images/fast-growing-chart.png"
+                width={284.94}
+                height={259}
+                alt="Fast Growing Chart"
+              />
             </CardHeader>
 
             <CardContent>
@@ -34,7 +40,13 @@ export function SectionNine() {
 
           <Card className="sm:w-[300px] lg:w-1/3 xl:w-[384px] bg-white shadow-[#535353]/7 shadow-xl lg:shadow-2xl border-none rounded-[16px]">
             <CardHeader className="pb-0 mb-8">
-              <MetaAdLibrary className="w-full" />
+              <Image
+                className="mx-auto h-[259px] object-contain"
+                src={"/images/meta-ad-library.png"}
+                width={259}
+                height={259}
+                alt="Meta Ad Library"
+              />
             </CardHeader>
 
             <CardContent>
@@ -62,7 +74,13 @@ export function SectionNine() {
           
           <Card className="sm:w-[300px] lg:w-1/3 xl:w-[384px] bg-white shadow-[#535353]/7 shadow-xl lg:shadow-2xl border-none rounded-[16px]">
             <CardHeader className="pb-0 mb-8">
-              <QualityOverQuantity className="w-full" />
+              <Image
+                className="mx-auto h-[259px] object-contain"
+                src={"/images/quality-over-quantity.png"}
+                width={259}
+                height={259}
+                alt="Quality Over Quantity"
+              />
             </CardHeader>
 
             <CardContent>

@@ -83,21 +83,21 @@ const videos = [
 ];
 
 const members = [
-  '/images/members/1.svg',
-  '/images/members/2.svg',
-  '/images/members/3.svg',
-  '/images/members/4.svg',
-  '/images/members/5.svg',
-  '/images/members/6.svg',
-  '/images/members/7.svg',
-  '/images/members/8.svg',
-  '/images/members/9.svg',
-  '/images/members/10.svg',
-  '/images/members/11.svg',
-  '/images/members/12.svg',
-  '/images/members/13.svg',
-  '/images/members/14.svg',
-  '/images/members/15.svg',
-  '/images/members/16.svg',
-  '/images/members/17.svg'
+  '/images/members/1.png',
+  '/images/members/2.png',
+  '/images/members/3.png',
+  '/images/members/4.png',
+  '/images/members/5.png',
+  '/images/members/6.png',
+  '/images/members/7.png',
+  '/images/members/8.png',
+  '/images/members/9.png',
+  '/images/members/10.png',
+  '/images/members/11.png',
+  '/images/members/12.png',
+  '/images/members/13.png',
+  '/images/members/14.png',
+  '/images/members/15.png',
+  '/images/members/16.png',
+  '/images/members/17.png'
 ]

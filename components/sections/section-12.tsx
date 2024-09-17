@@ -1,15 +1,21 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { FreshIdeas, MaximizeYourBudget, StayAhead, WastingTime } from "../ui/svgs";
 
 export function SectionTwelve() {
     return (
       <section className="flex flex-col justify-center items-center w-full pt-16 pb-20 px-5">
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%] mb-12">Unlock the Benefits of Adinspiration Today</h2>
 
-        <div className="flex flex-wrap justify-center xl:grid xl:grid-cols-7 gap-5 md:gap-3 xl:gap-6 h-auto xl:w-[80%]">
+        <div className="flex flex-wrap justify-center xl:grid xl:grid-cols-7 gap-5 md:gap-3 xl:gap-6 h-auto xl:w-[80%] xl:max-w-[1400px]">
             <Card className="size-full h-auto md:w-80 lg:w-[400px] xl:size-full xl:col-span-4 shadow-none border-neutral-100 bg-neutral-50 rounded-[10px]">
                 <CardHeader className="pb-0 relative">
-                    <WastingTime className="size-full xl:w-full xl:h-[212px]" />
+                    <Image
+                        className="size-full xl:w-full xl:h-[212px] object-contain"
+                        src="/images/wasting-time.png"
+                        width={400}
+                        height={212}
+                        alt="Stop Wasting Time And Money"
+                    />
 
                     <div className="absolute bottom-0 left-0 h-14 w-full bg-gradient-to-b from-transparent to-[#F7F8F9]" />
                 </CardHeader>
@@ -21,7 +27,13 @@ export function SectionTwelve() {
 
             <Card className="size-full h-auto md:w-80 lg:w-[400px] xl:size-full xl:col-span-3 shadow-none border-neutral-100 bg-neutral-50 rounded-[10px]">
                 <CardHeader className="pb-0 relative">
-                    <MaximizeYourBudget className="size-full xl:w-full xl:h-[212px]" />
+                    <Image
+                        className="size-full xl:w-full xl:h-[212px] object-contain"
+                        src="/images/maximize-your-budget.png"
+                        width={400}
+                        height={212}
+                        alt="Maximize Your Budget, Minimize the Guesswork"
+                    />
 
                     <div className="absolute bottom-0 left-0 h-14 w-full bg-gradient-to-b from-transparent to-[#F7F8F9]" />
                 </CardHeader>
@@ -33,7 +45,13 @@ export function SectionTwelve() {
 
             <Card className="size-full h-auto md:w-80 lg:w-[400px] xl:size-full xl:col-span-3 shadow-none border-neutral-100 bg-neutral-50 rounded-[10px]">
                 <CardHeader className="pb-0 relative">
-                    <FreshIdeas className="size-full xl:w-full xl:h-[212px]" />
+                    <Image
+                        className="size-full xl:w-full xl:h-[212px] object-contain"
+                        src="/images/fresh-ideas.png"
+                        width={400}
+                        height={212}
+                        alt="Fresh Ideas When Your Ads Hit a Wall"
+                    />
 
                     <div className="absolute bottom-0 left-0 h-14 w-full bg-gradient-to-b from-transparent to-[#F7F8F9]" />
                 </CardHeader>
@@ -45,7 +63,13 @@ export function SectionTwelve() {
 
             <Card className="size-full h-auto md:w-80 lg:w-[400px] xl:size-full xl:col-span-4 shadow-none border-neutral-100 bg-neutral-50 rounded-[10px]">
                 <CardHeader className="pb-0 relative">
-                    <StayAhead className="size-full xl:w-full xl:h-[212px]" />
+                    <Image
+                        className="size-full xl:w-full xl:h-[212px] object-contain"
+                        src="/images/stay-ahead.png"
+                        width={400}
+                        height={212}
+                        alt="Stay Ahead Without Breaking A Sweat!"
+                    />
 
                     <div className="absolute bottom-0 left-0 h-14 w-full bg-gradient-to-b from-transparent to-[#F7F8F9]" />
                 </CardHeader>
