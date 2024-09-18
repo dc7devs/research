@@ -64,6 +64,7 @@ export function VideoPlayerTestimonies({ path }: { path: string }) {
                         className="absolute z-30 flex size-12 rounded-full bg-white p-3 ring-4 ring-white/30"
                     >
                         <PlayIcon className="m-auto" />
+                        <span className="sr-only">Play Button</span>
                     </button>
                 )}
             </CardContent>

@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 export function HeroSection() {
     return (
       <section className="flex flex-col pt-32 md:pt-44 items-center h-auto w-full bg-paper-pattern bg-paper-pattern-size relative">
-        <div className="z-30 w-max px-3.5 md:px-4 md:py-1 rounded-full bg-yellow-100 border border-yellow-300">
+        <div className="z-30 w-max px-3.5 md:px-4 md:py-1 rounded-full bg-yellow-100/50 border border-yellow-300">
           <span className="text-base md:text-[17px] font-medium font-plus-jakarta-sans text-yellow-700">Sick of spending hours digging for ad ideas?</span>
         </div>
 

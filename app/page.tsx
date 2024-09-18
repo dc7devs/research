@@ -1,28 +1,44 @@
 import Image from "next/image";
 
-import {
-  SectionThirteen,
-  HeroSection
-} from "@/components/sections";
+import { HeroSection } from "@/components/sections";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChartTikTokAccountSVG, FastGrowingChart, MetaAdLibrary, QualityOverQuantity } from "@/components/ui/svgs";
-import { Ratings, TickCircle } from "@/components/ui/icons";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card";
+
+import {
+  ChartTikTokAccountSVG,
+  FastGrowingChart,
+  MetaAdLibrary,
+  QualityOverQuantity
+} from "@/components/ui/svgs";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "@/components/ui/carousel";
+
+import { ArrowDownIndicator, Ratings, TickCircle } from "@/components/ui/icons";
 import { VideoPlayerTestimonies } from "@/components/video-player-testimonies";
+import { PriceTable } from "@/components/price-table";
 import { FAQs } from "@/components/FAQs";
 
 import { cn } from "@/lib/utils";
 
 export default function Home() {
-
   return (
     <>
       <HeroSection />
 
       <section className="flex flex-col justify-center items-center w-full gap-10 py-10">
-        <h4 className="font-plus-jakarta-sans text-[25px] font-bold text-yellow-900 px-10 md:px-0 text-center">Trusted by some of the best ecommerce Brands And Agencies</h4>
+        <h2 className="font-plus-jakarta-sans text-[25px] font-bold text-yellow-900 px-10 md:px-0 text-center">Trusted by some of the best ecommerce Brands And Agencies</h2>
 
         <div className="flex items-center justify-center flex-wrap gap-10 md:gap-14 px-10 md:px-0">
           <Image
@@ -129,7 +145,7 @@ export default function Home() {
           <strong>Your Shortcut To Winning Ads And Viral Videos</strong>
         </h2>
 
-        <div className="z-30 w-max px-3.5 md:px-4 md:py-1 rounded-full bg-yellow-100 border border-yellow-300 mt-4">
+        <div className="z-30 w-max px-3.5 md:px-4 md:py-1 rounded-full bg-yellow-100/50 border border-yellow-300 mt-4">
           <span className="text-base md:text-[17px] font-medium font-plus-jakarta-sans text-yellow-700">We are not just a tool — we are a research service</span>
         </div>
 
@@ -137,7 +153,7 @@ export default function Home() {
           <p className="text-base md:text-lg font-plus-jakarta-sans text-neutral-600 text-center"><strong>Our secret?</strong> We combine the two most powerful elements for eCommerce brands right now:</p>
 
           <div className="flex flex-col gap-8 md:ap-10 mt-8 items-center">
-            <h3 className="font-plus-jakarta-sans font-bold text-center text-2xl md:text-4xl text-black">Organic Viral Videos + Winning Meta Ads </h3>
+            <h3 className="font-plus-jakarta-sans font-bold text-center text-2xl md:text-4xl text-black">Organic Viral Videos + Winning Meta Ads</h3>
 
             <a
               href="#"
@@ -152,7 +168,7 @@ export default function Home() {
 
           <div className="grid grid-cols-2 xl:flex gap-2.5 xl:gap-7 size-full mt-10 xl:m-0 xl:items-baseline">
             <Image
-              className="rounded-[12px] max-[1270px]:size-full order-3 xl:order-none"
+              className="object-cover rounded-[12px] max-[1270px]:size-full order-3 xl:order-none"
               src={"/images/organic-viral-videos-winning-meta-ads-image-1.png"}
               width={262}
               height={458}
@@ -160,7 +176,7 @@ export default function Home() {
             />
 
             <Image
-              className="rounded-[12px] max-[1279px]:size-full order-1 xl:order-none"
+              className="object-cover rounded-[12px] max-[1279px]:size-full order-1 xl:order-none"
               src={"/images/organic-viral-videos-winning-meta-ads-image-2.png"}
               width={260}
               height={360}
@@ -168,7 +184,7 @@ export default function Home() {
             />
 
             <Image
-              className="rounded-[12px] max-[1279px]:size-full order-2 xl:order-none"
+              className="object-cover rounded-[12px] max-[1279px]:size-full order-2 xl:order-none"
               src={"/images/organic-viral-videos-winning-meta-ads-image-3.png"}
               width={260}
               height={360}
@@ -176,7 +192,7 @@ export default function Home() {
             />
           
             <Image
-              className="rounded-[12px] max-[1279px]:size-full order-4 xl:order-none"
+              className="object-cover rounded-[12px] max-[1279px]:size-full order-4 xl:order-none"
               src={"/images/organic-viral-videos-winning-meta-ads-image-4.png"}
               width={262}
               height={458}
@@ -204,13 +220,16 @@ export default function Home() {
                 />
               </div>
 
-              <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-700">When you create content that <strong>resonates emotionally with your audience</strong>, it goes viral.</p>
+              <div className="flex flex-col">
+                <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-700">When you create content that <strong>resonates emotionally with your audience</strong>, it goes viral.</p>
+
+                <Separator
+                  orientation="horizontal"
+                  className="flex border-t-2 w-full my-3 border-dashed border-neutral-100 bg-transparent"
+                />
+              </div>
             </li>
 
-            <Separator
-              orientation="horizontal"
-              className="flex border-t-2 w-11/12 ml-10 my-3 border-dashed border-neutral-100 bg-transparent"
-            />
 
             <li className="flex gap-4">
               <div className="relative items-center">
@@ -222,13 +241,15 @@ export default function Home() {
                 />
               </div>
 
-              <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-700">You can take that viral success, <strong>tweak it</strong> and turn it into a performance ad that drives conversions.</p>
-            </li>
+              <div className="flex flex-col">
+                <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-700">You can take that viral success, <strong>tweak it</strong> and turn it into a performance ad that drives conversions.</p>
 
-            <Separator
-              orientation="horizontal"
-              className="flex border-t-2 w-11/12 ml-10 my-3 border-dashed border-neutral-100 bg-transparent"
-            />
+                <Separator
+                  orientation="horizontal"
+                  className="flex border-t-2 w-full my-3 border-dashed border-neutral-100 bg-transparent"
+                />
+              </div>
+            </li>
 
             <li className="flex gap-4">
               <div className="relative items-center">
@@ -613,7 +634,22 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionThirteen />
+      <section id="pricing" className="flex flex-col justify-center items-center w-full pt-16 pb-20 px-5">
+            <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 mb-4">How much does this cost?</h2>
+
+            <div className="relative mb-14">
+                <p className="my-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">For context, your business saves up to <strong>430 to 470 hours a month</strong> in research.</p>
+                <p className="mb-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If your team charges $20+ an hour, that’s <strong>$8600+</strong> in saved  costs each month—just by letting us handle the heavy lifting.</p>
+                <p className="text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If you’re serious about growing your eCommerce business, this is the investment that will pay off in<br/><strong>time saved and, most importantly, in sales generated!</strong></p>
+                
+                <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -left-7" />
+                <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -right-7 scale-x-[-1]" />
+            </div>
+
+            <PriceTable />
+
+            {/* HERE */}
+        </section>
 
       <section className="flex flex-col justify-center items-center w-full py-[80px] lg:py-[106px] bg-neutral-900 px-5">
           <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-white md:w-[70%] mb-4 xl:max-w-[1400px]">Our 100% Satisfaction Guarantee & Money-Back Promise</h2>

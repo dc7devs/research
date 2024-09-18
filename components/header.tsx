@@ -38,8 +38,8 @@ export function Header({ className }: { className?: string }) {
                         href={'https://adinspiration.com/signin'}
                         className={cn(
                             buttonVariants({ variant: 'outline' }),
-                            'ml-[21px] h-[48px] w-max rounded-full px-[32px] py-[12px] font-plus-jakarta-sans text-lg font-semibold bg-transparent hover:bg-primary/10',
-                            'text-yellow-600 border-yellow-300 hover:text-yellow-600'
+                            'ml-[21px] h-[48px] w-max rounded-full px-[32px] py-[12px] font-plus-jakarta-sans text-lg font-semibold bg-white hover:bg-primary/10',
+                            'text-yellow-700 border-yellow-300 hover:text-yellow-600'
                         )}
                         rel="noreferrer"
                     >
@@ -75,7 +75,10 @@ export function Header({ className }: { className?: string }) {
                         className={cn('size-6', isOpen ? 'block' : 'hidden')}
                         strokeWidth={2}
                     />
+
+                    <span className="sr-only">{isOpen ? "Close menu button" : "Open menu button"}</span>
                 </button>
+                
                 <MenuNavMobile
                     active={isOpen}
                     className="absolute left-0 top-[68px] border-y border-solid border-black/10 bg-white"
