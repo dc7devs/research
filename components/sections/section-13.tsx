@@ -1,9 +1,10 @@
+import { PriceTable } from "../price-table";
 import { ArrowDownIndicator } from "../ui/icons";
 
 export function SectionThirteen() {
     return (
         <section id="pricing" className="flex flex-col justify-center items-center w-full pt-16 pb-20 px-5">
-            <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 mb-4">Unlock the Benefits of Adinspiration Today</h2>
+            <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 mb-4">How much does this cost?</h2>
 
             <div className="relative mb-14">
                 <p className="my-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">For context, your business saves up to <strong>430 to 470 hours a month</strong> in research.</p>
@@ -14,7 +15,7 @@ export function SectionThirteen() {
                 <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -right-7 scale-x-[-1]" />
             </div>
 
-            {/* Table */}
+            <PriceTable />
         </section>
     )
 }

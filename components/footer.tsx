@@ -3,7 +3,7 @@ import { AppleLogo, FacebookLogo, GoogleLogo, InstagramLogo } from "./ui/icons";
 export function Footer() {
     return (
         <footer className="mx-auto w-full bg-neutral-900 py-14 md:py-16 md:px-20">
-            <div className="mx-auto flex flex-col">
+            <div className="mx-auto flex flex-col xl:max-w-[1400px]">
                 <div className="flex flex-col gap-10 md:gap-0 md:flex-row items-center justify-between w-full px-5 md:px-0">
                     <p className="font-plus-jakarta-sans text-[1.6rem] md:text-[1.25rem] font-semibold text-white">
                         <a href="https://adinspiration.com/">ADINSPIRATION.COM</a>
@@ -16,26 +16,6 @@ export function Footer() {
                             <li><a href="">Support</a></li>
                         </ul>
                     </nav>
-
-
-                    <div className="flex items-center gap-6">
-                        <a href="#">
-                            <FacebookLogo />
-                            <span className="sr-only">Facebook</span>
-                        </a>
-                        <a href="#">
-                            <GoogleLogo />
-                            <span className="sr-only">Google</span>
-                        </a>
-                        <a href="#">
-                            <AppleLogo />
-                            <span className="sr-only">Apple</span>
-                        </a>
-                        <a href="#">
-                            <InstagramLogo />
-                            <span className="sr-only">Instagram</span>
-                        </a>
-                    </div>
                 </div>
 
                 <hr className="border-neutral-700 my-8 mx-5 md:mx-0" />

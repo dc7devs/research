@@ -17,7 +17,7 @@ export function Header({ className }: { className?: string }) {
                 <a
                     href="https://adinspiration.com/"
                     target="_blank"
-                    className="font-inter font-semibold text-base leading-normal text-yellow-900 md:text-center"
+                    className="font-inter font-semibold text-lg lg:text-base leading-normal text-yellow-900 md:text-center"
                     rel="noreferrer"
                 >
                     ADINSPIRATION.COM
