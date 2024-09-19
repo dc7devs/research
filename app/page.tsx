@@ -754,6 +754,10 @@ export default function Home() {
                   </li>
                   <li className="flex gap-2">
                     <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Templates of Top-Performing Ads</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
                     <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Cancel Anytime</p>
                   </li>
                   
