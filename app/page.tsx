@@ -36,7 +36,7 @@ import { PriceTable } from "@/components/price-table";
 import { FAQs } from "@/components/FAQs";
 
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CircleX } from "lucide-react";
 import { badgeVariants } from "@/components/ui/badge";
 
 export default function Home() {
@@ -747,10 +747,18 @@ export default function Home() {
                 </a>
               </CardHeader>
               <CardContent>
-                <ul>
+              <ul>
                   <li className="flex gap-2">
                     <TickCircle className="size-4 shrink align-top mt-2.5" />
-                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Everything from the previous plan</p>
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Winning Ecommerce Meta Ads Library</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Viral Organic Ecommerce Videos Library</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Industry-Specific Insights</p>
                   </li>
                   <li className="flex gap-2">
                     <TickCircle className="size-4 shrink align-top mt-2.5" />
@@ -758,9 +766,12 @@ export default function Home() {
                   </li>
                   <li className="flex gap-2">
                     <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">30% Discount</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
                     <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Cancel Anytime</p>
                   </li>
-                  
                 </ul>
               </CardContent>
             </Card>
