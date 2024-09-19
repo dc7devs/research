@@ -27,10 +27,12 @@ import {
 
 import { ArrowDownIndicator, Ratings, TickCircle } from "@/components/ui/icons";
 import { VideoPlayerTestimonies } from "@/components/video-player-testimonies";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { PriceTable } from "@/components/price-table";
 import { FAQs } from "@/components/FAQs";
 
 import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -112,30 +114,8 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center w-full px-5 mt-20 pt-16 pb-20 md:pb-24">
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] mb-9 md:leading-[60px] font-bold text-yellow-900 md:w-[65%]">90% of Ad Creatives Fail—Could That Be Happening To You?</h2>
 
-        <div className="md:w-[75%] xl:max-w-[1400px]">
-          <p className="text-lg md:text-2xl md:leading-[42px] mb-5 font-plus-jakarta-sans text-neutral-700 text-center">If you’re in the eCommerce industry, you know the grind all too well:</p>
-          
-          <p className="text-lg md:text-2xl md:leading-[42px] font-plus-jakarta-sans text-neutral-700 text-center">Ad testing is the <strong>most critical part of succeeding with Meta ads right now</strong>.</p>
-          <p className="text-lg md:text-2xl md:leading-[42px] mb-5 font-plus-jakarta-sans text-neutral-700 text-center">The only way to know what works for your brand, product, and budget is through testing.</p>
-          
-          <p className="text-lg md:text-2xl md:leading-[42px] font-plus-jakarta-sans text-neutral-700 text-center">So you spend countless hours on Meta ad library, digging through endless ads with the hope to craft <strong>“The Winning Ad”</strong> and then ... <strong>nothing</strong>, the ad doesn’t perform!</p>
-        </div>
-
-        <Image
-          className="md:size-64"
-          src={"/images/arrow-drible-down.svg"}
-          width={160.42}
-          height={153.13}
-          alt="arrow drible down" 
-        />
-
-        <h3 className="font-plus-jakarta-sans font-bold text-center text-2xl md:text-4xl mb-9 text-neutral-700">Sound familiar? </h3>
-
-        <div className="md:w-[70%]">
-          <p className="text-lg md:text-2xl md:leading-[42px] mb-5 font-plus-jakarta-sans text-neutral-700 text-center">It’s not just annoying—<strong>it’s costing you money</strong>. Your budget is being eaten up by ads that don’t deliver, leaving you with disappointing results and a lot of wasted time</p>
-          
-          <p className="text-lg md:text-2xl md:leading-[42px] font-plus-jakarta-sans text-neutral-700 text-center">And let’s be real—<strong>testing dozens of creatives isn’t cheap</strong>, and <strong>creative fatigue?</strong> Ads quickly lose their effectiveness, leading to declining performance.</p>
-        </div>
+        <div></div>
+        {/* HERE */}
       </section>
 
       <section className="flex flex-col justify-center items-center w-full px-5 py-16 bg-[#FAFAFA]">
@@ -351,7 +331,7 @@ export default function Home() {
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%] mb-6">The Ad Creative is KING in Meta Ads...</h2>
         
         <p className="pb-3 font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800">… you know that already!</p>
-        <p className="pb-3 font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800 font-bold">It is now the most critical element of success and the best ROI that you can control!</p>
+        <p className="pb-3 font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800 font-bold">It is now the most critical element for success and provides the best ROI that you can control!</p>
         <p className="font-plus-jakarta-sans leanding-[36px] text-xl text-neutral-800">Other strategies are taking the backseat.</p>
 
         <Image
@@ -363,7 +343,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="flex flex-col justify-center items-center w-full px-5 pt-16 pb-[80px] bg-[#FAFAFA]">
+      <section className="flex flex-col justify-center items-center w-full px-5 pt-16 pb-[80px] bg-[#FAFAFA]">  
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%] mb-10">How do we handpick Winning Meta Ads?</h2>
 
         <div className="flex flex-wrap items-stretch justify-center gap-6 mb-14 lg:flex-nowrap">
@@ -646,27 +626,63 @@ export default function Home() {
                 <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -right-7 scale-x-[-1]" />
             </div>
 
-            <PriceTable />
+            <ScrollArea className="max-w-full overflow-x-auto lg:w-[80%] xl:max-w-[1400px]">
+              <div className="w-max lg:w-auto">
+                <PriceTable className="size-full" />
+              </div>
 
-            {/* HERE */}
+              <ScrollBar orientation="horizontal" />
+            </ScrollArea>
+
+            <div className="flex mt-16 flex-col items-center w-full">
+              <p className="font-plus-jakarta-sans font-bold text-base leading-9 text-neutral-800 text-center">Not sure yet? Let’s have a call and see how Adinspiration can help you!</p>
+
+              <Image
+                className="mt-4 size-14"
+                src="/images/book-a-call.png"
+                width={284}
+                height={284}
+                alt="Book a Call"
+              />
+
+              <a
+                className={cn(
+                  buttonVariants(),
+                  "h-10 md:h-14 w-max mt-6 px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 cursor-pointer"
+                )}
+              >
+                Book a call
+              </a>
+            </div>
         </section>
 
       <section className="flex flex-col justify-center items-center w-full py-[80px] lg:py-[106px] bg-neutral-900 px-5">
           <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-white md:w-[70%] mb-4 xl:max-w-[1400px]">Our 100% Satisfaction Guarantee & Money-Back Promise</h2>
 
-          <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-100 lg:font-medium md:w-[76%] text-center xl:max-w-[1400px]">Unlock a new Winning Ad within 30 Days GUARANTEED, or You Get Your Money Back! We want the investment in Adinspiration to be an absolute no-brainer for you </p>
+          <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-100 lg:font-medium md:w-[76%] text-center xl:max-w-[1400px]">Unlock a new Winning Ad within 30 Days GUARANTEED, or You Get Your Money Back! We want the investment in Adinspiration to be an absolute no-brainer for you</p>
           <br />
           <p className="font-plus-jakarta-sans text-lg lg:text-xl lg:leading-[36px] text-neutral-100 lg:font-medium md:w-[76%] text-center xl:max-w-[1400px]">We’ve got a 30-Day Money Back Guarantee, where if you've used the platform, create new ads based on our  recommendation and you are still not getting results after 30 days of testings, you can get a full, 100% refund.</p>
       </section>
 
       <section className="flex flex-col justify-center items-center gap-10 px-5 py-16 md:justify-normal lg:max-w-[1086px] lg:gap-14 lg:py-20 mx-auto">
           <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%]">
-          Frequently Asked Questions
+            Frequently Asked Questions
           </h2>
 
           <div className="mx-auto w-full lg:w-[800px] xl:w-[1086px]">
             <FAQs items={faqsItems} />
           </div>
+
+          <a
+            href="#"
+            className={cn(
+              buttonVariants(),
+              "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 flex items-center space-x-2 cursor-pointer",
+            )}
+          >
+            <span>Join Now</span>
+            <ArrowRight className="size-[18px]" />
+          </a>
       </section>
 
       <section className="flex lg:flex-col justify-center items-center size-full pb-20 px-5">
@@ -876,5 +892,13 @@ const faqsItems = [
   {
     question: 'Can I cancel anytime?',
     answer: "Yes, you can cancel anytime! We want to keep things simple and flexible, just cancel whenever it feels right for you, no strings attached."
+  },
+  {
+    question: 'I have another question. How can I contact you?', 
+    answer: (
+      <>
+        <p>Feel free to reach out to us at <a href="mailto:hello@adinspiration.com">hello@adinspiration.com</a> —we’re happy to help with any other questions!</p>
+      </>
+    )
   }
 ]

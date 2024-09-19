@@ -16,9 +16,7 @@ export function Header({ className }: { className?: string }) {
             <div className="flex w-full items-center justify-between md:rounded-[40px] md:bg-white px-8 py-3 md:mt-4">
                 <a
                     href="https://adinspiration.com/"
-                    target="_blank"
                     className="font-inter font-semibold text-lg lg:text-base leading-normal text-yellow-900 md:text-center"
-                    rel="noreferrer"
                 >
                     ADINSPIRATION.COM
                 </a>
@@ -34,25 +32,21 @@ export function Header({ className }: { className?: string }) {
                         Pricing
                     </a>
                     <a
-                        target="_blank"
                         href={'https://adinspiration.com/signin'}
                         className={cn(
                             buttonVariants({ variant: 'outline' }),
                             'ml-[21px] h-[48px] w-max rounded-full px-[32px] py-[12px] font-plus-jakarta-sans text-lg font-semibold bg-white hover:bg-primary/10',
                             'text-yellow-700 border-yellow-300 hover:text-yellow-600'
                         )}
-                        rel="noreferrer"
                     >
                         Login
                     </a>
                     <a
-                        target="_blank"
                         href={'https://adinspiration.com/signup'}
                         className={cn(
                             buttonVariants(),
                             'ml-[24px] h-[48px] w-max rounded-full px-[32px] py-[12px] text-lg font-plus-jakarta-sans font-semibold',
                         )}
-                        rel="noreferrer"
                     >
                         Join Now
                     </a>

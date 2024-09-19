@@ -56,6 +56,7 @@ export function HeroSection() {
                         height={350}
                         width={260}
                         alt="slide image"
+                        priority
                       />
                     </div>
                   </CarouselItem>

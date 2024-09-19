@@ -11,9 +11,12 @@ export function Footer() {
 
                     <nav>
                         <ul className="flex gap-7 md:gap-12 text-neutral-300 font-plus-jakarta-sans font-medium text-base leading-6 tracking-[-0.1px]">
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">ROI Calculator</a></li>
-                            <li><a href="">Support</a></li>
+                            <li>
+                                <a className="hover:text-white/90" href="https://adinspiration.com/blog">Blog</a>
+                            </li>
+                            <li>
+                                <a className="hover:text-white/90" href="https://adinspiration.com/tools/meta-ads-cost-calculator">ROI Calculator</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -21,12 +24,16 @@ export function Footer() {
                 <hr className="border-neutral-700 my-8 mx-5 md:mx-0" />
 
                 <div className="flex-col flex gap-5 px-5 md:px-0 md:gap-0 md:flex-row items-center justify-between">
-                    <p className="text-base self-start font-plus-jakarta-sans text-neutral-300">©{new Date().getFullYear()} Adinspiration. All Rights Reserved.- hello@adinspiration.com</p>
+                    <p className="text-base self-start font-plus-jakarta-sans text-neutral-300">©{new Date().getFullYear()} Adinspiration. All Rights Reserved.- <a href="mailto:hello@adinspiration.com" className="hover:text-white/90">hello@adinspiration.com</a></p>
 
                     <nav className="self-end">
                         <ul className="flex gap-7 md:gap-12 text-neutral-300 font-plus-jakarta-sans font-medium text-base leading-6 tracking-[-0.1px]">
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms & Conditions</a></li>
+                            <li>
+                                <a href="https://adinspiration.com/privacy" className="hover:text-white/90">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://adinspiration.com/terms" className="hover:text-white/90">Terms & Conditions</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -34,6 +41,3 @@ export function Footer() {
         </footer>
     )
 }
-
-// https://adinspiration.com/privacy
-// https://adinspiration.com/terms
