@@ -12,8 +12,12 @@ import {
 } from "@/components/ui/card";
 
 import {
+  AdFatigue,
+  Calculator,
   ChartTikTokAccountSVG,
+  Choese,
   FastGrowingChart,
+  Frustation,
   MetaAdLibrary,
   QualityOverQuantity
 } from "@/components/ui/svgs";
@@ -114,8 +118,51 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center w-full px-5 mt-20 pt-16 pb-20 md:pb-24">
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] mb-9 md:leading-[60px] font-bold text-yellow-900 md:w-[65%]">90% of Ad Creatives Fail—Could That Be Happening To You?</h2>
 
-        <div></div>
-        {/* HERE */}
+        <div className="flex flex-wrap items-stretch justify-center gap-4 lg:gap-6 xl:max-w-[1400px]">
+          <Card className="w-full sm:w-[400px] md:w-5/12 shadow-none rounded-[16px] border-neutral-100">
+            <CardHeader className="pb-0 lg:h-[300px] mb-5 lg:mb-8">
+              <Choese className="size-full" />
+            </CardHeader>
+
+            <CardContent>
+              <CardTitle className="text-lg lg:text-[22px] lg:leading-[38px] px-0 font-plus-jakarta-sans text-neutral-700 font-bold text-center mb-2">Ad testing is the most critical part of succeeding with Meta ads right now</CardTitle>
+              <p className="text-lg lg:text-[22px] lg:leading-[38px] text-neutral-700 font-plus-jakarta-sans font-normal text-center">The only way to know what works for your brand, product, and budget is through testing.</p>
+            </CardContent>
+          </Card>
+
+          <Card className="w-full sm:w-[400px] md:w-5/12 shadow-none rounded-[16px] border-neutral-100">
+            <CardHeader className="pb-0 lg:h-[300px] mb-5 lg:mb-8">
+              <Frustation className="size-full" />
+            </CardHeader>
+
+            <CardContent>
+              <CardTitle className="text-lg lg:text-[22px] lg:leading-[38px] px-0 font-plus-jakarta-sans text-neutral-700 font-bold text-center mb-2">So you spend countless hours on Meta ad library</CardTitle>
+              <p className="text-lg lg:text-[22px] lg:leading-[38px] text-neutral-700 font-plus-jakarta-sans font-normal text-center">Digging through endless ads with the hope to craft “The Winning Ad” and then ... <strong>nothing</strong>, the ad doesn’t perform!</p>
+            </CardContent>
+          </Card>
+
+          <Card className="w-full sm:w-[400px] md:w-5/12 shadow-none rounded-[16px] border-neutral-100">
+            <CardHeader className="pb-0 lg:h-[300px] mb-5 lg:mb-8">
+              <Calculator className="size-full" />
+            </CardHeader>
+
+            <CardContent>
+              <CardTitle className="text-lg lg:text-[22px] lg:leading-[38px] px-0 font-plus-jakarta-sans text-neutral-700 font-bold text-center mb-2">It’s not just annoying—it’s costing you money</CardTitle>
+              <p className="text-lg lg:text-[22px] lg:leading-[38px] text-neutral-700 font-plus-jakarta-sans font-normal text-center">Your budget is being eaten up by ads that don’t deliver, leaving you with disappointing results and a lot of wasted time</p>
+            </CardContent>
+          </Card>
+
+          <Card className="w-full sm:w-[400px] md:w-5/12 shadow-none rounded-[16px] border-neutral-100">
+            <CardHeader className="pb-0 lg:h-[300px] mb-5 lg:mb-8">
+              <AdFatigue className="size-full" />
+            </CardHeader>
+
+            <CardContent>
+              <CardTitle className="text-lg lg:text-[22px] lg:leading-[38px] px-0 font-plus-jakarta-sans text-neutral-700 font-bold text-center mb-2">And let’s be real—Ads quickly lose their effectiveness, leading to declining performance</CardTitle>
+              <p className="text-lg lg:text-[22px] lg:leading-[38px] text-neutral-700 font-plus-jakarta-sans font-normal text-center">Testing dozens of creatives isn’t cheap,</p>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       <section className="flex flex-col justify-center items-center w-full px-5 py-16 bg-[#FAFAFA]">

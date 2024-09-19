@@ -1,39 +1,47 @@
 'use client';
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { cn } from "@/lib/utils";
 import { PlayIcon } from "./ui/icons";
 
-export function VideoPlayerTestimonies({ path }: { path: string }) {
+export const VideoPlayerTestimonies = memo(({ path }: { path: string }) => {
     const video_ref = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    const handlePlayVideo = useCallback(() => {
-        if (video_ref.current) {
-          video_ref.current.play();
-          setIsPlaying(true);
-        }
-      }, []);
-    
-      const handleStopVideo = useCallback(() => {
-        if (video_ref.current) {
-          video_ref.current.pause();
-          video_ref.current.currentTime = 0;
-          setIsPlaying(false);
-        }
-      }, []);
-
-      useEffect(() => {
-        if (video_ref.current) {
-          video_ref.current.addEventListener('ended', () => {
-            if (video_ref.current) {
-              video_ref.current.pause();
-              video_ref.current.currentTime = 0;
-            }
-            setIsPlaying(false);
+    const handlePlayVideo = () => {
+      if (video_ref.current) {
+          requestAnimationFrame(() => {
+              video_ref.current?.play();
           });
+          setIsPlaying(true);
+      }
+    }
+    
+    const handleStopVideo = () => {
+      if (video_ref.current) {
+        video_ref.current.pause();
+        video_ref.current.currentTime = 0;
+        setIsPlaying(false);
+      }
+    }
+
+    useEffect(() => {
+      const videoElement = video_ref.current;
+
+      const handleEnded = () => {
+        if (videoElement) {
+          videoElement.pause();
+          videoElement.currentTime = 0;
         }
-      }, []);
+        setIsPlaying(false);
+      }
+
+      if(videoElement) videoElement.addEventListener('ended', handleEnded);
+
+      return () => {
+        if(videoElement) videoElement.removeEventListener('ended', handleEnded);
+      }
+    }, []);
 
     return (
         <Card className="w-full h-auto 2xl:w-[256px] rounded-xl border-none shadow-none">
@@ -50,7 +58,7 @@ export function VideoPlayerTestimonies({ path }: { path: string }) {
 
                 <video
                     ref={video_ref}
-                    
+                    preload="metadata"
                     className={
                         'absolute top-0 z-10 size-full object-cover aspect-w-9'
                     }
@@ -70,4 +78,6 @@ export function VideoPlayerTestimonies({ path }: { path: string }) {
             </CardContent>
         </Card>
     )
-}
+})
+
+VideoPlayerTestimonies.displayName = 'VideoPlayerTestimonies';
