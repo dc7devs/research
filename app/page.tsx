@@ -106,6 +106,7 @@ export default function Home() {
         {/* Player Video */}
 
         <a
+          href="https://adinspiration.com/signup"
           className={cn(
             buttonVariants(),
             "h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 flex items-center space-x-2 cursor-pointer"
@@ -184,7 +185,7 @@ export default function Home() {
             <h3 className="font-plus-jakarta-sans font-bold text-center text-2xl md:text-4xl text-black">Organic Viral Videos + Winning Meta Ads</h3>
 
             <a
-              href="#"
+              href="https://adinspiration.com/signup"
               className={cn(
                 buttonVariants(),
                 "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
@@ -365,7 +366,7 @@ export default function Home() {
         <h3 className="font-plus-jakarta-sans font-bold text-2xl lg:text-4xl text-black mb-[35px] text-center">Take viral organic ideas and turn them into top-performing ads today</h3>
 
         <a
-          href="#"
+          href="https://adinspiration.com/signup"
           className={cn(
             buttonVariants(),
             "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
@@ -574,7 +575,7 @@ export default function Home() {
         <h3 className="font-plus-jakarta-sans font-bold text-2xl lg:text-[32px] lg:leading-[36px] text-neutral-800 mb-6">Stay ahead of your competitors</h3>
 
         <a
-          href="#"
+          href="https://adinspiration.com/signup"
           className={cn(
             buttonVariants(),
             "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
@@ -690,7 +691,7 @@ export default function Home() {
                 </div>
 
                 <a
-                    href="#"
+                    href="https://adinspiration.com/signup"
                     className={cn(
                         buttonVariants(),
                         "z-30 h-10 md:h-14 w-full py-[15.5px] max-[1024px]:mt-3 lg:mt-6 rounded-[40px] font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
@@ -737,7 +738,7 @@ export default function Home() {
                 </div>
 
                 <a
-                    href="#"
+                    href="https://adinspiration.com/signup"
                     className={cn(
                         buttonVariants(),
                         "z-30 h-10 md:h-14 w-full py-[15.5px] max-[1024px]:mt-3 lg:mt-6 rounded-[40px] font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
@@ -790,6 +791,8 @@ export default function Home() {
           />
 
           <a
+            href="https://calendly.com/alex_faini/"
+            target="_blank"
             className={cn(
               buttonVariants(),
               "h-10 md:h-14 w-max mt-6 px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 cursor-pointer"
@@ -818,7 +821,7 @@ export default function Home() {
           </div>
 
           <a
-            href="#"
+            href="https://adinspiration.com/signup"
             className={cn(
               buttonVariants(),
               "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 flex items-center space-x-2 cursor-pointer",

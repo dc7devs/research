@@ -19,7 +19,7 @@ export function HeroSection() {
         <p className="z-30 font-plus-jakarta-sans font-normal text-neutral-800 text-lg md:text-lg  lg:text-xl lg:leading-9 md:w-[75%] lg:w-1/2 text-center mb-6 md:mb-10 xl:max-w-[1400px] px-5 md:px-0">We analyze over 3175 fast-growing eCommerce brands every week, handpicking their best organic viral videos and top-performing Meta ads to save you time, money, and frustration.</p>
         
         <a
-          href="#"
+          href="https://adinspiration.com/signup"
           className={cn(
             buttonVariants(),
             "z-30 h-10 md:h-14 w-max px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 flex items-center space-x-2 cursor-pointer",
