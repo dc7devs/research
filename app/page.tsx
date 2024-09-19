@@ -37,6 +37,7 @@ import { FAQs } from "@/components/FAQs";
 
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import { badgeVariants } from "@/components/ui/badge";
 
 export default function Home() {
   return (
@@ -662,46 +663,127 @@ export default function Home() {
       </section>
 
       <section id="pricing" className="flex flex-col justify-center items-center w-full pt-16 pb-20 px-5">
-            <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 mb-4">How much does this cost?</h2>
+        <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 mb-4">How much does this cost?</h2>
 
-            <div className="relative mb-14">
-                <p className="my-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">For context, your business saves up to <strong>430 to 470 hours a month</strong> in research.</p>
-                <p className="mb-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If your team charges $20+ an hour, that’s <strong>$8600+</strong> in saved  costs each month—just by letting us handle the heavy lifting.</p>
-                <p className="text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If you’re serious about growing your eCommerce business, this is the investment that will pay off in<br/><strong>time saved and, most importantly, in sales generated!</strong></p>
-                
-                <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -left-7" />
-                <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -right-7 scale-x-[-1]" />
-            </div>
+        <div className="relative mb-14">
+            <p className="my-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">For context, your business saves up to <strong>430 to 470 hours a month</strong> in research.</p>
+            <p className="mb-5 text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If your team charges $20+ an hour, that’s <strong>$8600+</strong> in saved  costs each month—just by letting us handle the heavy lifting.</p>
+            <p className="text-lg text-center leading-[32px] font-plus-jakarta-sans text-neutral-700">If you’re serious about growing your eCommerce business, this is the investment that will pay off in<br/><strong>time saved and, most importantly, in sales generated!</strong></p>
+            
+            <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -left-7" />
+            <ArrowDownIndicator className="hidden xl:block absolute bottom-0 -right-7 scale-x-[-1]" />
+        </div>
 
-            <ScrollArea className="max-w-full overflow-x-auto lg:w-[80%] xl:max-w-[1400px]">
-              <div className="w-max lg:w-auto">
-                <PriceTable className="size-full" />
-              </div>
+        <div className="w-full lg:w-[80%] xl:max-w-[1400px]">
+          <PriceTable className="hidden md:block size-full" />
 
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
+          <div className="md:hidden flex flex-col gap-8">
+            <Card className="shadow-none rounded-[16px] border-neutral-100">
+              <CardHeader className="text-white">
+                <div className="flex flex-col">
+                    <p className="mb-2 font-plus-jakarta-sans text-xl leading-6 text-dark font-bold">Quartely</p>
+                    <p className="font-plus-jakarta-sans mb-2">
+                        <span className="text-4xl leading-[44px] font-bold text-yellow-900">$97</span>
+                        <span className="text-xl text-neutral-500 font-normal">/month</span>
+                    </p>
+                    <small className="text-base font-plus-jakarta-sans font-medium text-neutral-600">Billed quarterly $291</small>
+                </div>
 
-            <div className="flex mt-16 flex-col items-center w-full">
-              <p className="font-plus-jakarta-sans font-bold text-base leading-9 text-neutral-800 text-center">Not sure yet? Let’s have a call and see how Adinspiration can help you!</p>
+                <a
+                    href="#"
+                    className={cn(
+                        buttonVariants(),
+                        "z-30 h-10 md:h-14 w-full py-[15.5px] max-[1024px]:mt-3 lg:mt-6 rounded-[40px] font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
+                    )}
+                >
+                    Join Now
+                </a>
+              </CardHeader>
+              <CardContent>
+                <ul>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Winning Ecommerce Meta Ads Library</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Viral Organic Ecommerce Videos Library</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Industry-Specific Insights</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Cancel Anytime</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
 
-              <Image
-                className="mt-4 size-14"
-                src="/images/book-a-call.png"
-                width={284}
-                height={284}
-                alt="Book a Call"
-              />
+            <Card className="shadow-none rounded-[16px] border-neutral-100">
+              <CardHeader className="text-white">
+                <div className="flex flex-col">
+                    <p className="mb-2 font-plus-jakarta-sans text-xl leading-6 text-dark font-bold">Yearly</p>
+                    <p className="font-plus-jakarta-sans mb-2">
+                        <span className="text-4xl leading-[44px] font-bold text-yellow-900">$68</span>
+                        <span className="text-xl text-neutral-500 font-normal">/month</span>
+                        <span className={cn(
+                            badgeVariants(),
+                            "px-2 py-1 text-sm font-bold texat-yellow-800 rounded-[14px] ml-2.5 my-auto text-yellow-800 bg-yellow-500 hover:bg-yellow-500 border-[.7px] border-yellow-300"
+                        )}>30% off</span>
+                    </p>
+                    <small className="text-base font-plus-jakarta-sans font-medium text-neutral-600">Billed yearly $816</small>
+                </div>
 
-              <a
-                className={cn(
-                  buttonVariants(),
-                  "h-10 md:h-14 w-max mt-6 px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 cursor-pointer"
-                )}
-              >
-                Book a call
-              </a>
-            </div>
-        </section>
+                <a
+                    href="#"
+                    className={cn(
+                        buttonVariants(),
+                        "z-30 h-10 md:h-14 w-full py-[15.5px] max-[1024px]:mt-3 lg:mt-6 rounded-[40px] font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900"
+                    )}
+                >
+                    Join Now
+                </a>
+              </CardHeader>
+              <CardContent>
+                <ul>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Everything from the previous plan</p>
+                  </li>
+                  <li className="flex gap-2">
+                    <TickCircle className="size-4 shrink align-top mt-2.5" />
+                    <p className="w-full text-lg font-medium leading-[36px] font-plus-jakarta-sans text-neutral-700">Cancel Anytime</p>
+                  </li>
+                  
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="flex mt-16 flex-col items-center w-full">
+          <p className="font-plus-jakarta-sans font-bold text-base leading-9 text-neutral-800 text-center">Not sure yet? Let’s have a call and see how Adinspiration can help you!</p>
+
+          <Image
+            className="mt-4 size-14"
+            src="/images/book-a-call.png"
+            width={284}
+            height={284}
+            alt="Book a Call"
+          />
+
+          <a
+            className={cn(
+              buttonVariants(),
+              "h-10 md:h-14 w-max mt-6 px-6 md:px-8 rounded-full font-plus-jakarta-sans font-semibold text-lg md:text-xl text-yellow-900 cursor-pointer"
+            )}
+          >
+            Book a call
+          </a>
+        </div>
+      </section>
 
       <section className="flex flex-col justify-center items-center w-full py-[80px] lg:py-[106px] bg-neutral-900 px-5">
           <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-white md:w-[70%] mb-4 xl:max-w-[1400px]">Our 100% Satisfaction Guarantee & Money-Back Promise</h2>

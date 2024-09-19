@@ -10,10 +10,10 @@ export function PriceTable({ className }: { className?: string }) {
         <Table className={cn(className, "border-b border-neutral-200")}>
             <TableHeader>
                 <TableRow className="hover:bg-transparent border-neutral-200">
-                    <TableHead className="align-bottom max-[1024px]:pr-6 lg:px-6 pb-4 w-[280px] lg:w-[44%] border-r border-neutral-200">
+                    <TableHead className="align-bottom max-[1024px]:pr-6 lg:px-6 pb-4 w-[280px] md:w-[44%] border-r border-neutral-200">
                         <p className="text-xl leading-6 text-dark font-bold">Features</p>
                     </TableHead>
-                    <TableHead className="px-6 pb-4 w-[250px] lg:w-[28%] border-r border-neutral-200">
+                    <TableHead className="px-6 pb-4 w-[250px] md:w-[28%] border-r border-neutral-200">
                         <div className="flex flex-col">
                             <p className="mb-2 font-plus-jakarta-sans text-xl leading-6 text-dark font-bold">Quartely</p>
                             <p className="font-plus-jakarta-sans mb-2">
@@ -33,7 +33,7 @@ export function PriceTable({ className }: { className?: string }) {
                             Join Now
                         </a>
                     </TableHead>
-                    <TableHead className="px-6 pb-4 w-[250px] lg:w-[28%]">
+                    <TableHead className="px-6 pb-4 w-[250px] md:w-[28%]">
                         <div className="flex flex-col">
                             <p className="mb-2 font-plus-jakarta-sans text-xl leading-6 text-dark font-bold">Yearly</p>
                             <p className="font-plus-jakarta-sans mb-2">
