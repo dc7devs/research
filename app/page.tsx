@@ -105,28 +105,28 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
             <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">02</div>
-            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Tell us about your competitors</p>
+            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Tell us about your competitors or brands you are interested in</p>
           </div>
 
           <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
             <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">03</div>
             <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
-              <span>We track your competitors’ viral videos and winning Meta ads </span>
+              <span>We track your brands’ viral videos and winning Meta ads</span>
               <br />
               <span>+</span>
               <br />
-              <span>We continuously add new competitors to your library so you get more insights</span>
+              <span>We continuously add new similar brands to your library so you get more </span>
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
             <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">04</div>
             <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
-              <span>Your library will include: your competitors</span>
+              <span>Your personalized library will include: Your brands</span>
               <br />
               <span>+</span>
               <br />
-              <span>other members’ competitors viral videos and winning Meta ads</span>
+              <span>other members’ brands viral videos and winning Meta ads</span>
             </p>
           </div>
         </div>
