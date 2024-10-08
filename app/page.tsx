@@ -92,6 +92,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="flex flex-col justify-center items-center w-full py-10 px-5">
+        <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%] mb-10">
+          This Is How it Works
+        </h2>
+
+        <div className="flex flex-wrap md:flex-nowrap lg:flex-wrap xl:flex-nowrap gap-6 items-stretch justify-center">
+          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
+            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">01</div>
+            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Sign up for our research service <a className="font-bold underline ring-offset-1" href="https://adinspiration.com/signup">here</a></p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
+            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">02</div>
+            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Tell us about your competitors</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
+            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">03</div>
+            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
+              <span>We track your competitors’ viral videos and winning Meta ads </span>
+              <br />
+              <span>+</span>
+              <br />
+              <span>We continuously add new competitors to your library so you get more insights</span>
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
+            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">04</div>
+            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
+              <span>Your library will include: your competitors</span>
+              <br />
+              <span>+</span>
+              <br />
+              <span>other members’ competitors viral videos and winning Meta ads</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="flex flex-col justify-center items-center w-full gap-10 px-5 mt-10">
         <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] font-bold text-yellow-900 md:w-[65%]">What’s Inside</h2>
 
@@ -463,46 +503,6 @@ export default function Home() {
               <p className="w-full text-lg leading-[36px] font-plus-jakarta-sans text-neutral-700 text-center">It’s all about <strong>quality over quantity</strong> here. That’s why we are a research service!</p>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      <section className="flex flex-col justify-center items-center w-full py-10 px-5">
-        <h2 className="text-center font-plus-jakarta-sans text-3xl md:text-[40px] md:leading-[60px] font-bold text-yellow-900 md:w-[65%] mb-10">
-          This Is How it Works
-        </h2>
-
-        <div className="flex flex-wrap md:flex-nowrap lg:flex-wrap xl:flex-nowrap gap-6 items-stretch justify-center">
-          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
-            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">01</div>
-            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Sign up for our research service <a className="font-bold underline ring-offset-1" href="https://adinspiration.com/signup">here</a></p>
-          </div>
-
-          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
-            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">02</div>
-            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">Tell us about your competitors</p>
-          </div>
-
-          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
-            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">03</div>
-            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
-              <span>We track your competitors’ viral videos and winning Meta ads </span>
-              <br />
-              <span>+</span>
-              <br />
-              <span>We continuously add new competitors to your library so you get more insights</span>
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center gap-4 border border-neutral-100 rounded-[8px] p-4 w-full sm:w-2/4 md:h-auto md:w-3/12 lg:w-2/4 xl:w-[300px]">
-            <div className="bg-primary rounded-md text-yellow-900 font-plus-jakarta-sans font-bold px-1.5 py-0.5 text-xl md:text-2xl">04</div>
-            <p className="font-plus-jakarta-sans text-[20px] leading-[33px] text-neutral-800 text-center">
-              <span>Your library will include: your competitors</span>
-              <br />
-              <span>+</span>
-              <br />
-              <span>other members’ competitors viral videos and winning Meta ads</span>
-            </p>
-          </div>
         </div>
       </section>
 
